@@ -27,7 +27,7 @@ validate(){
 }
 
 ### Copying the repo file to server  ###
-cp mongo.repo /etc/yum.repo.d/mongo.repo
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 validate $? "Adding mongo repo"
 
 dnf install mongodb-org -y
